@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+
+:root{ 
+    --texto: "Inter", sans-serif;
+    --backround-color:hsl(0, 0%, 8%);
+    --color-principal: hsl(0, 0%, 12%);
+    --color-boton:hsl(0, 0%, 20%);
+    --color-texto-principal: hsl(0, 0%, 100%);
+    --color-pais: hsl(75, 94%, 57%);
+    
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    color: var(--color-texto-principal);
+    font-family: var(--texto);
+    font-size: 14px;
+}
+
+body {
+    background-color: var(--backround-color);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+.contenedor-principal {
+    background-color: var(--color-principal);
+    min-width: 360px;
+    border-radius: 12px;
+
+}
+
+.contenedor-contenido {
+    padding: 40px;
+    width: 100%;
+}
+
+.contenedor-texto,.contenedor-botones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.contenedor-botones{
+    width: 100%;
+    gap: 16px;
+}
+
+.foto {
+    width: 88px;
+    height: 88px;
+    border-radius: 50%;
+    
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 24px 0px 4px 0px;
+
+}
+
+h2 {
+    font-weight: 700;
+    color: var(--color-pais);
+    margin-bottom: 24px;
+}
+
+h3 {
+    font-weight: 400;
+    margin-bottom: 24px;
+}
+
+a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--color-boton);
+    border-radius: 8px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: var(--color-pais);
+    color: #141414;
+    
+}
+ 
+a {
+    text-decoration: none;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 36px;
+}
+
+.nombre {
+    color: var(--color-pais);
+
+}
